@@ -1,0 +1,21 @@
+.content{
+  margin-top: 20px;
+  overflow: auto;
+}
+.title{
+  font-size:25px;
+  font-weight: bold;
+}
+.detail{
+  margin-top: 20px;
+}
+.font{
+  float: left;
+}
+.font + div{
+  margin-left: 40px;
+}
+.font1{
+  margin-top: 15px;
+}
+

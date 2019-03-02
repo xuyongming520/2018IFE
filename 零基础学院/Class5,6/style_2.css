@@ -1,0 +1,18 @@
+body{
+  height:600px;
+}
+.bigtitle{
+  width: 200px;
+  height: 100%;
+  float: left;
+  margin: 0px 20px 0px 0px;
+  text-align: center;
+  line-height: 100px;
+  background: #65a5fa;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.centre{
+  float: left;
+}
