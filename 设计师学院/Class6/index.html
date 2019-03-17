@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+  </head>
+  <body>
+    <div class="bgList">
+      <div class="bg fir active"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+    </div>
+    <div class="buttonList">
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+    </div>
+    <script>
+      var bg=document.querySelectorAll('.bg');
+      var button=document.querySelectorAll('.button');
+      var frontprepIndex=1;
+      var prepIndex=1;
+      for(var i=0;i<5;i+=1){(
+        function(i){
+          button[i].onclick=function(){
+          console.log(i);
+          console.log(frontprepIndex);
+          console.log(prepIndex);
+          console.log('abc');
+          bg[frontprepIndex].classList.remove('fir');
+          bg[prepIndex].classList.remove('active');
+          bg[prepIndex].classList.add('fir');
+          bg[i].classList.add('active');
+          frontprepIndex = prepIndex;
+          prepIndex = i;
+          }
+        })(i)
+      }
+    </script>
+  </body>
+</html>
